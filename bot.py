@@ -14,9 +14,9 @@ app = Client(
 )
 
 gif = [
-    'https://graph.org/file/962f5fdc0ebaab2193e71.jpg',
-    'https://graph.org/file/962f5fdc0ebaab2193e71.jpg',
-    'https://graph.org/file/962f5fdc0ebaab2193e71.jpg',
+    'https://te.legra.ph/file/17cba675fe3c88987494e.jpg',
+    'https://te.legra.ph/file/17cba675fe3c88987494e.jpg',
+    'https://te.legra.ph/file/17cba675fe3c88987494e.jpg',
 ]
 
 
@@ -47,15 +47,15 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💕 ᴄʜᴀɴɴᴇʟ", url="https://t.me/AbhiModszYT_Return"),
-                        InlineKeyboardButton("💕 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/AM_YTSupport")
+                        InlineKeyboardButton("💕 ᴄʜᴀɴɴᴇʟ", url="https://t.me/RadhaX2Support"),
+                        InlineKeyboardButton("💕 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/RadhaX2Support")
                     ],[
-                        InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/Auto_approveRobot?startgroup")
+                        InlineKeyboardButton("🥺 ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/Auto_approveRobot?startgroup")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://te.legra.ph/file/2c54beb88a7f260ceb2ce.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @AMBOTYT__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://te.legra.ph/file/2c54beb88a7f260ceb2ce.jpg", caption="**🦊 ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴩᴩʀᴏᴠᴇ [ᴀᴅᴍɪɴ ᴊᴏɪɴ ʀᴇqᴜᴇꜱᴛꜱ]({}) Bot.\nɪ ᴄᴀɴ ᴀᴩᴩʀᴏᴠᴇ ᴜꜱᴇʀꜱ ɪɴ ɢʀᴏᴜᴩꜱ/ᴄʜᴀɴɴᴇʟꜱ.ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴩʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀꜱ ᴩᴇʀᴍɪꜱꜱɪᴏɴ.\n\n__ ᴩᴏᴡᴇʀᴅ ʙy : @GhostRadha__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
