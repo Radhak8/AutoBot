@@ -55,18 +55,18 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://te.legra.ph/file/2c54beb88a7f260ceb2ce.jpg", caption="**🦊 ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴩᴩʀᴏᴠᴇ [ᴀᴅᴍɪɴ ᴊᴏɪɴ ʀᴇqᴜᴇꜱᴛꜱ]({}) Bot.\nɪ ᴄᴀɴ ᴀᴩᴩʀᴏᴠᴇ ᴜꜱᴇʀꜱ ɪɴ ɢʀᴏᴜᴩꜱ/ᴄʜᴀɴɴᴇʟꜱ.ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴩʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀꜱ ᴩᴇʀᴍɪꜱꜱɪᴏɴ.\n\n__ ᴩᴏᴡᴇʀᴅ ʙy : @GhostRadha__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://te.legra.ph/file/2c54beb88a7f260ceb2ce.jpg", caption="**🦊 ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴩᴩʀᴏᴠᴇ [ᴀᴅᴍɪɴ ᴊᴏɪɴ ʀᴇqᴜᴇꜱᴛꜱ]({}) ʙᴏᴛ.\nɪ ᴄᴀɴ ᴀᴩᴩʀᴏᴠᴇ ᴜꜱᴇʀꜱ ɪɴ ɢʀᴏᴜᴩꜱ/ᴄʜᴀɴɴᴇʟꜱ.ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴩʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀꜱ ᴩᴇʀᴍɪꜱꜱɪᴏɴ.\n\n__ Pᴏᴡᴇʀᴅ ʙy : @GhostRadha__**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/Auto_approveRobot?start=start")
+                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/Autoapprove2_bot?start=start")
                     ]
                 ]
             )
             add_group(m.chat.id)
-            await m.reply_text("**🦊 Hello {}!\nwrite me private for more details**".format(m.from_user.first_name), reply_markup=keyboar)
+            await m.reply_text("**🦊 ʜᴇʟʟᴏ {}!\nᴡʀɪᴛᴇ ᴍᴇ ᴩʀɪᴠᴀᴛᴇ ꜰᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟꜱ**".format(m.from_user.first_name), reply_markup=keyboar)
         print(m.from_user.first_name +" Is started Your Bot!")
 
     except UserNotParticipant:
@@ -77,7 +77,7 @@ async def op(_, m :Message):
                 ]
             ]
         )
-        await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join @{} to use me.If you joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
+        await m.reply_text("**⚠️ᴀᴄᴄᴇꜱꜱ ᴅᴇɴɪᴇᴅ!⚠️\n\nᴩʟᴇᴀꜱᴇ ᴊᴏɪɴ @{} ᴛᴏ ᴜꜱᴇ ᴍᴇ.ɪꜰ yᴏᴜ ᴊᴏɪɴᴇᴅ ᴄʟɪᴄᴋ ᴄʜᴇᴄᴋ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ᴛᴏ confirm.**".format(cfg.FSUB), reply_markup=key)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -89,15 +89,15 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💕 ᴄʜᴀɴɴᴇʟ", url="https://t.me/AbhiModszYT_Return"),
-                        InlineKeyboardButton("💕 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/AM_YTSupport")
+                        InlineKeyboardButton("💕 ᴄʜᴀɴɴᴇʟ", url="https://t.me/RadhaX2Update"),
+                        InlineKeyboardButton("💕 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/RadhaX2Support")
                     ],[
-                        InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/Auto_approveRobot?startgroup")
+                        InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/Autoapprove2_bot?startgroup")
                     ]
                 ]
             )
             add_user(cb.from_user.id)
-            await cb.message.edit("**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @AMBOTYT__**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
+            await cb.message.edit("**🦊 ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴩᴩʀᴏᴠᴇ [ᴀᴅᴍɪɴ ᴊᴏɪɴ ʀᴇqᴜᴇꜱᴛꜱ]({}) ʙᴏᴛ.\nɪ ᴄᴀɴ ᴀᴩᴩʀᴏᴠᴇ ᴜꜱᴇʀꜱ ɪɴ ɢʀᴏᴜᴩꜱ/ᴄʜᴀɴɴᴇʟꜱ.ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴩʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀꜱ ᴩᴇʀᴍɪꜱꜱɪᴏɴ.\n\n__ Pᴏᴡᴇʀᴅ ʙy : @GhostRadha__**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
@@ -145,14 +145,14 @@ async def bcast(_, m : Message):
             print(e)
             failed +=1
 
-    await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
+    await lel.edit(f"✅ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟ ᴛᴏ `{success}` ᴜꜱᴇʀꜱ.\n❌ ꜰᴀɪʟᴅ ᴛᴏo `{failed}` ᴜꜱᴇʀꜱ.\n👾 ꜰᴏᴜɴᴅ `{blocked}` Blocked users \n👻 Found `{deactivated}` ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴜꜱᴇʀꜱ.")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Broadcast Forward ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_message(filters.command("fcast") & filters.user(cfg.SUDO))
 async def fcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...`")
+    lel = await m.reply_text("`⚡️ ᴩʀᴏᴄᴇꜱꜱɪɴɢ...`")
     success = 0
     failed = 0
     deactivated = 0
@@ -177,7 +177,7 @@ async def fcast(_, m : Message):
             print(e)
             failed +=1
 
-    await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
+    await lel.edit(f"✅ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟ ᴛᴏ `{success}` ᴜꜱᴇʀꜱ.\n❌ ꜰᴀɪʟᴅ ᴛᴏo `{failed}` ᴜꜱᴇʀꜱ.\n👾 ꜰᴏᴜɴᴅ `{blocked}` Blocked users \n👻 Found `{deactivated}` ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴜꜱᴇʀꜱ.")
 
-print("I'm Alive Now!")
+print("ɪ'ᴍ ᴀʟɪᴠᴇ ɴᴏᴡ!")
 app.run()
